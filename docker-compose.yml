@@ -1,0 +1,12 @@
+version: '3'
+services:
+  hexo-blog:
+    container_name: hexo-blog
+    image: hexo-blog:latest
+    restart: always
+    privileged: true
+    ports:
+      - '4000:4000'
+    volumes:
+      - /d/docker/blog/source:/root/blog/source
+      - /d/docker/blog/themes:/root/blog/themes
