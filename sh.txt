@@ -1,4 +1,6 @@
-config-blog.sh
+###config-blog.sh
 docker rm -f hexo-blog && docker rmi hexo-blog && ./init-blog.sh
-init-blog.sh
+###init-blog.sh
 cd ./data && docker build -t hexo-blog:latest . && cd ../ && docker-compose -f "docker-compose.yml" up -d
+####restart-blog.sh
+docker-compose -f "docker-compose.yml" down && docker-compose -f "docker-compose.yml" up -d
