@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 关于大厂技术部组织架构及部门发展方向的思考 · cuizhanglou</title><meta name="description" content="关于大厂技术部组织架构及部门发展方向的思考 - czl"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/prontera.css"><link rel="search" type="application/opensearchdescription+xml" href="https://cuizhanglou.github.io/atom.xml" title="cuizhanglou"><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="cuizhanglou" type="application/atom+xml">
+</head><body><header class="feature-header"><nav class="component-nav"><ul><div class="logo-container"><a href="/"><h2 class="title">cuizhanglou</h2></a></div><a href="/" target="_self" class="li component-nav-item"><p>首页</p></a><a href="/categories/home/index.html" target="_self" class="li component-nav-item"><p>生活</p></a><a href="/categories/work/index.html" target="_self" class="li component-nav-item"><p>工作</p></a><a href="/categories/think/index.html" target="_self" class="li component-nav-item"><p>观点</p></a><a href="/categories/travel/index.html" target="_self" class="li component-nav-item"><p>旅行</p></a><a href="/archives" target="_self" class="li component-nav-item"><p>归档</p></a><a href="/about/index.html" target="_self" class="li component-nav-item"><p>关于</p></a><ul class="shortcut-icons"><a href="https://github.com/cuizhanglou" target="_blank"><img src="/images/github.svg" class="icon"></a><a href="/atom.xml" target="_blank"><img src="/images/rss.svg" class="icon"></a></ul></ul></nav></header><main class="container"><div id="post-container"><div class="post"><article class="post-block"><h1 class="post-title">关于大厂技术部组织架构及部门发展方向的思考</h1><div class="post-info">Jan 8, 2021</div><div class="post-content"><p>关于1月召开的管委会过程中对于大厂的组织架构形式以及本公司技术部是否可以向中台架构模式转变的研究及思考如下：</p>
+<a id="more"></a>
+
+<h4 id="一、大厂的组织架构"><a href="#一、大厂的组织架构" class="headerlink" title="一、大厂的组织架构"></a>一、大厂的组织架构</h4><p>经过网上的搜索研究，以及和相关人员请教学习，大致可以汇总如下图两种模式：<br><br/><br><img src="/images/2021010802.png"><br><br/><br>1、大中台+小前台的模式，如图上字节跳动所示。<br><br/><br>这种模式，把所有相关的基础模块，在组织形式上单独出来，形成中台支撑，小前端为各项目组。这个其实和目前公司的模式在一定程度上是类似的。比如既有的公用支撑部门，客服，仓管，选品，采购等，以及新近成立的品牌设计部。而且可能随着业务的发展，为了进行资源的整合与集中，后期也有可能把广告投放，用户运营单独形成共享的中台部门和资源系统。<br><br/><br>2、事业群的模式，如图上美团，以及常提到的腾讯。<br><br/><br>所谓事业群就是按照项目进行分配，一个事业群负责多个项目，然后一个事业群甚至是一个项目配齐相关需要的人员，同时可以涵盖技术，产品，运营，采购等多个模块。这个和目前公司的相差就比较大。<br><br/><br>对比以上两种，其实各有优劣。事业群的模式相对小模块中的衔接配合会更加顺畅，效率更高，但在公司层面的资源同步共享以及重复开发公用上会有劣势。而中台加前台的模式则更加方便资源集中，能够快速的支持新项目运转，劣势是共用资源需要排期需要调配，更加考验团队协作才能发挥最大化。不同的公司的发展阶段不同，不同的模式也适应不同的公司，可以说对应的模式也更多的是结合着公司的业务方向进行不断演变和调整的。</p>
+<h4 id="二、关于技术部架构的思考"><a href="#二、关于技术部架构的思考" class="headerlink" title="二、关于技术部架构的思考"></a>二、关于技术部架构的思考</h4><p>首先汇总思路如下图所示：<br><br/><br><img src="/images/2021010801.png"><br><br/></p>
+<h4 id="1、关于架构"><a href="#1、关于架构" class="headerlink" title="1、关于架构"></a>1、关于架构</h4><br/>
+架构细分可以拆成三个块，分别是软件应用层架构，云端服务层架构，部门组织架构。里面的部门组织架构更多的是为软件应用层架构服务的，而云端服务层架构则是为了软件应用层做支撑。
+<br/>
+
+<h4 id="1-1、软件应用层架构"><a href="#1-1、软件应用层架构" class="headerlink" title="1.1、软件应用层架构"></a>1.1、软件应用层架构</h4><br/>
+目前公司的项目更多的是偏向于短平快，尽快的实现业务为主，在立项的时候没有统一的标准和架构。虽然都是用php开发的，但其中又区分为magento，laravel，fastadmin，onethink等。随着公司规模越来越大，项目也越来越多，后期多个项目直接的数据交互娴接等会有更多，所以有必要开始计划性的进行架构设计，标准执行及逐步的施行。
+<br/>
+
+<h4 id="1-2、云端服务层架构"><a href="#1-2、云端服务层架构" class="headerlink" title="1.2、云端服务层架构"></a>1.2、云端服务层架构</h4><br/>
+关于这一块，如图所示，传统的模式就是虚拟化技术，也就是公司一直在用的模式。这种模式不转变并不影响业务发展，也足以支撑现有业务正常运转。但基于新技术方向的探索和追赶，以及传统虚拟化的缺点，有必要开始逐步的向容器虚拟化架构转变。传统虚拟化最明显的两个缺点，一是不支持弹性伸缩，在业务高峰期和低谷期，所使用的配置和价格是恒定的。二是可复用性差，遇到业务高峰或突增，传统的虚拟化在复用加服务器方面比较繁琐，步骤繁多，维护成本较高。而容器虚拟化恰好能够解决以上两个问题，同时容器虚拟化也是目前市面上主流认可的下一代云端架构的方向。关于这一点，自今年10月引进专业运维之后，已经在逐步的尝试并应用。
+<br/>
+
+<h4 id="1-3、部门组织架构"><a href="#1-3、部门组织架构" class="headerlink" title="1.3、部门组织架构"></a>1.3、部门组织架构</h4><br/>
+可以明确的是目前的组织结构形式可以定义为基于业务搭建的组织架构，说白了就是不同的业务让不同的人负责，成立不同的小组。而下一步的发展方向其实很明确，就是基于中台搭建组织架构。关于中台，其实有两个面，一个是技术中台，也就是中台系统。另一个是组织中台，在组织结构上设置中台部门，负责相关的资源整合统一。这个其实就是字节跳动所采用的模式比较类似，也是我们接下来会发展的方向。
+<br/>
+a、中台本身就是为了解决资源共享和资源复用而生，而如前所述，目前的公有小组的属性就带有中台的性质，如运维小组，测试小组；
+<br/>
+b、在组织结构上搭建中台的第一步，应该是不基于某个项目和业务成立小组，而这个小组的主要工作就是做模块化和标准化的构建，比如，所有系统都要用到注册登录模块，那么就把这个模块单独抽离出来，做到中台里面，然后现有项目的注册登录统一替换为这个模块，后期的项目统一的也使用该模块，相关的系统再次开发的时候这一块的人力和时间就节省了出来，这样实现了资源复用，不用重复作业造轮子，体现中台的价值。其他的模块也可以以此类推，并在逐渐的推动人员从业务向中台系统转移，最终形成基于中台搭建的组织架构形式。
+<br/>
+c、抛开以上两点，现在技术人员正在做的事情也有两个点是契合中台形式的，一是前端人员正在构建的组件库，项目越来越多，雷同性越来越强，那么抽离出公用的部分形成组件库，后面在不同项目中进行复用，提高效率。二是后端人员正在构建的模块库，同样也是可移植复用，避免重复开发的点。只不过以上两块没有自上而下的统一规划和标准化，所以还不足以完全形成理想中的中台化。
+<br/>
+d、基于以上几点，现有的系统以及组织架构向中台化转变，这个是必然的趋势和方向，而且已经在有意识的一步步的向这个方向努力。但结合目前的业务形态和规模，相对来讲依然不够大不够成规模，需要更多的时间去演变和成熟。
+<br/></div></article></div></div></main><footer class="footer-container"><div class="paginator"><a href="/2021/01243843e0674f92.html" class="prev">PREV</a><a href="/2021/01079329b4630675.html" class="next">NEXT</a></div><div class="copyright"><p>© 2020 - 2022 <a href="https://cuizhanglou.github.io">czl</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/AngryPowman/hexo-theme-prontera" target="_blank">hexo-theme-prontera</a>.</p></div></footer></body></html>
